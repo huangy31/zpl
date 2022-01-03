@@ -25,6 +25,7 @@ HUB: DEL
 
 # import zebra
 from zebra import Zebra
-z = Zebra('ZDesigner ZT220-200dpi ZPL')
+# z = Zebra('ZDesigner ZT220-200dpi ZPL')
+z = Zebra('zpllabelprinter')
 z.output(label)
 # print(z.getqueues())

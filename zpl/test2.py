@@ -4,7 +4,8 @@ from zebra import Zebra
 
 height = 100
 width = 60
-z = Zebra('ZDesigner ZT220-200dpi ZPL')
+# z = Zebra('ZDesigner ZT220-200dpi ZPL')
+z = Zebra('zpllabelprinter')
 label = zpl.Label(height, width, 8)
 label.write_graphic(Image.open('trollface-large.png'), width)
 z.output(label.dumpZPL())

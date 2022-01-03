@@ -8,7 +8,7 @@ Q=z.getqueues()
 print(Q)
 
 
-z.setqueue(Q[0])
+# z.setqueue(Q[0])
 # Set the printer queue
 print(Q[0])
 
@@ -25,6 +25,7 @@ print(Q[0])
 # Run AutoSense by sending an EPL2 command
 # Get the printer to detect label and gap length and set the sensor levels
 
-z = Zebra('ZDesigner ZT220-200dpi ZPL')
+# z = Zebra('ZDesigner ZT220-200dpi ZPL')
+z = Zebra('zpllabelprinter')
 z.print_config_label()
 # Send an EPL2 command to print label(s) with current config settings
