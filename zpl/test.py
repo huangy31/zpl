@@ -1,4 +1,11 @@
 label = """
+^XA 
+^FO100,100 
+^BQN,2,10 
+^FDMM,AAC-42
+^FS 
+^XZ
+
 ^XA
 
 ^FO140,15
