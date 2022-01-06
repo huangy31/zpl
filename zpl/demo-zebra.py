@@ -29,6 +29,15 @@ l.write_text('Happy Troloween!', char_height=5, char_width=4, line_width=60,
              justification='C')
 l.endorigin()
 label=l.dumpZPL()
+str_qr = """
+^XA 
+^FO100,100 
+^BQN,2,10 
+^FDMM,AAC-42
+^FS 
+^XZ
+"""
+label = label + "\n" + str_qr
 print(label)
 # l.preview()
 z = Zebra('zpllabelprinter') #printer name
